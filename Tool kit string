@@ -2,12 +2,10 @@
 #include <string.h>
 #include <stdbool.h>
 
-// Function to find string length
 void findLength(char str[]) {
     printf("Length of the string: %lu\n", strlen(str));
 }
 
-// Function to check if a string is a palindrome
 void checkPalindrome(char str[]) {
     int len = strlen(str);
     bool isPalindrome = true;
@@ -24,15 +22,12 @@ void checkPalindrome(char str[]) {
     else
         printf("It is not a palindrome.\n");
 }
-
-// Function to copy one string to another
 void copyString(char source[]) {
     char destination[100];
     strcpy(destination, source);
     printf("Copied string: %s\n", destination);
 }
 
-// Function to compare two strings
 void compareStrings(char str1[]) {
     char str2[100];
     printf("Enter another string to compare: ");
@@ -44,7 +39,6 @@ void compareStrings(char str1[]) {
         printf("Strings are not equal.\n");
 }
 
-// Main function with menu
 int main() {
     char str[100];
     int choice;
